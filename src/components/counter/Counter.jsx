@@ -1,8 +1,15 @@
-import { useState } from "react";
-import s from './Counter.module.css'
+import { useState, useEffect } from "react";
+import s from './Counter.module.css';
 
 export const Counter = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => {
+    const savedCount = localStorage.getItem("count");
+    return savedCount !== null ? parseInt(savedCount, 10) : 0;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("count", count);
+  }, [count]);
 
   return (
     <>
