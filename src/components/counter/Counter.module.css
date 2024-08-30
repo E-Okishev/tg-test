@@ -1,0 +1,20 @@
+.button {
+    padding: 32px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease-in;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.count {
+    text-align: center;
+}

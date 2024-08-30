@@ -1,0 +1,14 @@
+.block {
+    height: 203px;
+    width: 183px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.block:hover {
+    opacity: 0.8;
+}
