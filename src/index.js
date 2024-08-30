@@ -14,12 +14,12 @@ const initializeTelegramSDK = async () => {
     // Попытка инициализировать настоящее окружение Telegram
     console.log("Инициализация окружения Telegram");
     const [miniApp] = initMiniApp();
+    miniApp.setHeaderColor("pink");
     await miniApp.ready();
   } catch (error) {
     // В случае ошибки инициализируем фейковое окружение
     console.error("Ошибка при инициализации Telegram:", error);
 
-    miniApp.setHeaderColor("pink");
 
     // Инициализация главной кнопки
     const [mainButton] = initMainButton();
