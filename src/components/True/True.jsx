@@ -3,8 +3,6 @@ import { Details } from "../Details/Details";
 import { data } from "../../data";
 
 export const True = () => {
-    console.log(data);
-    
   return (
     <section>
       <BlockTitle>Давайте по{"\u2011"}честному</BlockTitle>

@@ -42,6 +42,17 @@ h3 {
   line-height: 24px;
 }
 
+button {
+  pointer-events: none;
+  cursor: pointer;
+  color: #f5f5ff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .App {
   text-align: center;
 }
@@ -65,7 +76,7 @@ h3 {
   h2 {
     font-size: 24px;
   }
-  h3 {
+  h3, button {
     font-size: 16px;
   }
 }
