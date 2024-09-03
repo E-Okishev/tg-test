@@ -2,18 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #f5f5ff;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, #fff 6.1%, #f7f7f7 68.7%);
-  height: 100vh;
+  background: linear-gradient(180deg, #0d0d0d 0%, #292929 100%);
+}
+
+main {
+  display: grid;
+  gap: 64px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .App {
