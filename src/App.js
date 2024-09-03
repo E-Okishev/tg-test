@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { FirstBlock } from "./components/FirstBlock/FirstBlock";
 import { True } from "./components/True/True";
 import { Form } from "./components/Form/Form";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <True />
         <Form/>
       </main>
+      <Footer/>
     </>
   );
 }

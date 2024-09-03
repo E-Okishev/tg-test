@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Button } from "../Button/Button";
+import arrow from "../../images/arrow.svg";
 
 export const Form = () => {
   const [formData, setFormData] = useState({
@@ -43,12 +45,14 @@ export const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     // Здесь нужно будет отправить данные в Telegram
     sendMessageToTelegram(formData);
+    console.log('send');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="myForm" onSubmit={handleSubmit}>
       <div>
         <label>
           Name:
@@ -81,7 +85,11 @@ export const Form = () => {
           />
         </label>
       </div>
-      <button type="submit">Send</button>
+      <button form="myForm" type="submit">send</button>
+      <Button>
+                    Получить консультацию
+                    <img src={arrow} alt="arrow" />    
+                </Button>
     </form>
   );
 };

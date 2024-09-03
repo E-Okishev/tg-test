@@ -21,6 +21,7 @@ main {
   gap: 64px;
   max-width: 600px;
   margin: 0 auto;
+  padding-block-end: 200px;
 }
 
 h1 {
@@ -42,6 +43,11 @@ h3 {
   line-height: 24px;
 }
 
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 button {
   pointer-events: none;
   cursor: pointer;
@@ -51,6 +57,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  padding: 22px;
 }
 
 .App {
@@ -76,7 +83,14 @@ button {
   h2 {
     font-size: 24px;
   }
-  h3, button {
+  h3,
+  button {
     font-size: 16px;
+  }
+  p{
+    font-size: 14px;
+  }
+  button {
+    padding: 20px;
   }
 }
