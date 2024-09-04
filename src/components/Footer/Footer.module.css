@@ -2,14 +2,18 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  width: 100%;
 }
 
 .block {
   background-color: #404040;
   border-radius: 24px 24px 0px 0px;
-  display: grid;
+  display: flex;
   gap: 16px;
   padding: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .text {

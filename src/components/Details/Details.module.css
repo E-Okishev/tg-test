@@ -1,14 +1,30 @@
 .listItem {
-    background-color: #404040;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 19px;
-    margin-block-end: 4px;
-    margin-inline: 16px;
+  background-color: #404040;
+  border-radius: 24px;
+  padding: 16px 19px;
+  margin-block-end: 4px;
+  margin-inline: 16px;
+}
+
+.listItemImg {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .listItem:last-child {
-    margin-block-end: 0;
+  margin-block-end: 0;
+}
+
+.title {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(122.98deg, #a6e439 0%, #1db9d4 100%);
+}
+
+.listElemNoImg {
+  display: grid;
+}
+
+.listElem {
 }

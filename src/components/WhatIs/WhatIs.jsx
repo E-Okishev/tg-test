@@ -1,13 +1,14 @@
 import { BlockTitle } from "../BlockTitle/BlockTitle";
 import { Details } from "../Details/Details";
-import { data } from "../../data";
+import { whatIs } from "../../data";
+import s from "./WhatIs.module.css";
 
-export const True = () => {
+export const WhatIs = () => {
   return (
     <>
-      <BlockTitle>Давайте по{"\u2011"}честному</BlockTitle>
+      <BlockTitle>Что такое Битрикс24</BlockTitle>
       <ul>
-        {data.map((detail) => (
+        {whatIs.map((detail) => (
           <Details key={detail.description} {...detail} />
         ))}
       </ul>

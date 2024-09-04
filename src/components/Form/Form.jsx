@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../Button/Button";
 import arrow from "../../images/arrow.svg";
+import { BlockTitle } from "../BlockTitle/BlockTitle";
 
 export const Form = () => {
   const [formData, setFormData] = useState({
@@ -45,51 +46,56 @@ export const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Здесь нужно будет отправить данные в Telegram
     sendMessageToTelegram(formData);
-    console.log('send');
+    console.log("send");
   };
 
   return (
-    <form id="myForm" onSubmit={handleSubmit}>
-      <div>
-        <label>
-          Name:
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          Message:
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-        </label>
-      </div>
-      <button form="myForm" type="submit">send</button>
-      <Button>
-                    Получить консультацию
-                    <img src={arrow} alt="arrow" />    
-                </Button>
-    </form>
+    <>
+      <BlockTitle>Оставьте заявку на консультацию</BlockTitle>
+      <form id="myForm" onSubmit={handleSubmit}>
+        <div>
+          <label>
+            Name:
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Message:
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <button form="myForm" type="submit">
+          send
+        </button>
+        <Button>
+          Получить консультацию
+          <img src={arrow} alt="arrow" />
+        </Button>
+      </form>
+    </>
   );
 };
