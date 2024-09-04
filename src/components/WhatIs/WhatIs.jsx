@@ -1,5 +1,5 @@
-import { BlockTitle } from "../BlockTitle/BlockTitle";
-import { WhatIsList } from "../WhatIsList/WhatIsList";
+import { BlockTitle } from "../elements/BlockTitle/BlockTitle";
+import { WhatIsList } from "../elements/WhatIsList/WhatIsList";
 import { whatIs } from "../../data";
 import s from "./WhatIs.module.css";
 

@@ -1,0 +1,65 @@
+.form {
+  background-color: #242424;
+  border-radius: 32px;
+  padding: 32px 16px;
+  display: grid;
+  gap: 24px;
+}
+
+.input {
+  outline: none;
+  border: transparent;
+  border-radius: 10px;
+  padding: 24px 16px;
+  background-color: #404040;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.input::placeholder {
+  color: #757575;
+}
+
+.checkbox {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.checkboxLabel {
+  color: #757575;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.checkboxInput {
+  appearance: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #757575;
+  transition: 0.3s;
+}
+
+.checkboxInput:focus {
+  box-shadow: 0 0 3px 1px #1DB9D4;
+}
+
+.checkboxInput::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-image: url('../../images/check.svg');
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.checkboxInput:checked::after {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}

@@ -1,5 +1,5 @@
-import { BlockTitle } from "../BlockTitle/BlockTitle";
-import { TrueList } from "../TrueList/TrueList";
+import { BlockTitle } from "../elements/BlockTitle/BlockTitle";
+import { TrueList } from "../elements/TrueList/TrueList";
 import { data } from "../../data";
 
 export const True = () => {

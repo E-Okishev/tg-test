@@ -1,4 +1,4 @@
-import { Button } from "../Button/Button";
+import { Button } from "../elements/Button/Button";
 import image from "../../images/bgImage.webp";
 import s from "./FirstBlock.module.css";
 

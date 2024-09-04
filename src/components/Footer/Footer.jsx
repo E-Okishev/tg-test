@@ -1,4 +1,4 @@
-import { Button } from "../Button/Button";
+import { Button } from "../elements/Button/Button";
 
 import s from "./Footer.module.css";
 
