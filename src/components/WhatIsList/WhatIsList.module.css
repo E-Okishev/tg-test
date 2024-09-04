@@ -1,14 +1,11 @@
 .listItem {
   background-color: #404040;
   border-radius: 24px;
-  padding: 16px 19px;
+  padding: 16px;
   margin-block-end: 4px;
   margin-inline: 16px;
-}
-
-.listItemImg {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
 }
 
@@ -16,15 +13,15 @@
   margin-block-end: 0;
 }
 
+.listItem::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .title {
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(122.98deg, #a6e439 0%, #1db9d4 100%);
-}
-
-.listElemNoImg {
-  display: grid;
-}
-
-.listElem {
 }

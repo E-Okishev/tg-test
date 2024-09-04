@@ -1,5 +1,5 @@
 import { BlockTitle } from "../BlockTitle/BlockTitle";
-import { Details } from "../Details/Details";
+import { TrueList } from "../TrueList/TrueList";
 import { data } from "../../data";
 
 export const True = () => {
@@ -8,7 +8,7 @@ export const True = () => {
       <BlockTitle>Давайте по{"\u2011"}честному</BlockTitle>
       <ul>
         {data.map((detail) => (
-          <Details key={detail.description} {...detail} />
+          <TrueList key={detail.description} {...detail} />
         ))}
       </ul>
     </>
